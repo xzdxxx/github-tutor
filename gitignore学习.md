@@ -6,8 +6,9 @@
 - ?仅匹配1个任意字符，多1个或少1个字符都不匹配。比如?.jpg，能匹配a.jpg、1.jpg，但无法匹配ab.jpg、.jpg 可如下图所示
 ![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/951c350e516745caa33b3fc7ccc75a95~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1718&h=932&s=120921&e=png&b=ffffff)
 - []匹配括号内的任意1个字符，支持单个字符或字符范围。例如file[0-9].txt，可匹配file0.txt到file9.txt；file[abc].txt则能匹配filea.txt、fileb.txt、filec.txt
-- ** 能匹配任意层级的目录，例如dist/**/*.jpg，可匹配dist目录下所有子目录中的.js文件，像dist/app.jpg、dist/src/happy.jpg都能被匹配到
-- !表示取反,需放在对应的匹配规则之后。比如先写*.log（忽略所有.log文件），再写!important.log（不忽略important.log），这样就能实现忽略大部分.log文件，仅保留important.log
+- ** 能匹配任意层级的目录，例如dist/**/*.jpg，可匹配dist目录下所有子目录中的.jpg文件，像dist/app.jpg、dist/src/happy.jpg都能被匹配到 可如下图所示
+![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8b10467b3e734005b262de2541bd0afc~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1524&h=1022&s=114501&e=png&b=ffffff)
+- !表示取反,需放在对应的匹配规则之后。比如先写*.log（忽略所有.log文件），再写!important.log（不忽略important.log），这样就能实现忽略大部分.log文件，仅保留important.log 可如下图所示
 ![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/83933c54e1814ce5969c3d502e447607~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1962&h=1166&s=134334&e=png&b=ffffff)
 - 直接写名称**dist**,如下图.可以发现不管是文件还是文件夹都可以匹配到,不只是第一层,子目录里面的文件和文件夹都可以匹配
 ![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a2641e25b82f4e328e987d43a6489f15~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1920&h=888&s=111314&e=png&b=ffffff)
