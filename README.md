@@ -80,3 +80,8 @@
 - git diff HEAD         //工作区+暂存区vs本地仓库
 - git diff HEAD~1 HEAD    //提交之间的差异(~2,~3)
 - git diff <分支名> <另外一个分支名>    //分支之间的差异
+---
+> 其他指令
+- git stash              //当有其他任务进来时，可将当前任务暂时存储起来
+- git stash list         //可以查看存储起来的任务放在哪里了
+- git stash pop          //恢复任务并删除stash的内容
