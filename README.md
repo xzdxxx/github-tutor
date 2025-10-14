@@ -77,6 +77,6 @@
 > 差异查看
 - git diff                //工作区vs暂存区
 - git diff --cached       //暂存区vs本地仓库
-- git diff --HEAD         //工作区+暂存区vs本地仓库
+- git diff HEAD         //工作区+暂存区vs本地仓库
 - git diff HEAD~1 HEAD    //提交之间的差异(~2,~3)
 - git diff <分支名> <另外一个分支名>    //分支之间的差异
