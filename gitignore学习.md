@@ -11,4 +11,6 @@
 > 下面是一些实战用法
 - 直接写名称**dist**,如下图.可以发现不管是文件还是文件夹都可以匹配到,不只是第一层,子目录里面的文件和文件夹都可以匹配
 ![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a2641e25b82f4e328e987d43a6489f15~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1920&h=888&s=111314&e=png&b=ffffff)
-- 
+- /在前面 **/dist**,如下图.当/在前面的时候,/dist只能匹配gitignore当前根目录下的dist文件或文件夹
+![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dbd04152ca554140b5a55789ae5c4e38~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1908&h=872&s=109817&e=png&b=ffffff)
+![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f34250f54c4446d0822b011fa3e00b94~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1800&h=1000&s=115044&e=png&b=ffffff)
