@@ -13,4 +13,7 @@
 ![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a2641e25b82f4e328e987d43a6489f15~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1920&h=888&s=111314&e=png&b=ffffff)
 - /在前面 **/dist**,如下图.当/在前面的时候,/dist只能匹配gitignore当前根目录下的dist文件或文件夹
 ![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dbd04152ca554140b5a55789ae5c4e38~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1908&h=872&s=109817&e=png&b=ffffff)
-![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f34250f54c4446d0822b011fa3e00b94~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1800&h=1000&s=115044&e=png&b=ffffff)
+- /在中间 **src/dist** 他就只会匹配src目录里面的dist.js
+![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f7b450ad4a9b4141be18b57afa0ee322~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1928&h=834&s=109018&e=png&b=ffffff)
+- /在后面 **dist/**,这个跟直接写dist是差不多的,直接写dist是匹配文件和文件夹,dist/是匹配文件夹
+![示例](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f6788c4eb16b46f196f7a07185d6104d~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1900&h=858&s=119321&e=png&b=ffffff)
