@@ -57,4 +57,26 @@
    - git merge <分支名>  //在这之前先切换到主分支
 5. 解决合并冲突
    - 手动修改冲突的内容，如vim <冲突文件>
-   ![冲突演示]()
+   - ![冲突演示](https://github.com/xzdxxx/github-tutor/blob/main/demo.png?raw=true)
+   - <<<<<<< HEAD 到 ======= 是当前分支内容，======= 到 >>>>>>> feat是源分支内容
+   - 弄完之后就git add <冲突文件> 再提交 git commit -m "冲突文件"
+---
+> 远程仓库操作
+1. 关联远程仓库
+   - git remote add <远程仓库名> <远程仓库地址>
+   - git remote -v           //查看远程仓库详细信息
+   - git remote remove       //解除关联
+2. 拉取远程数据
+   - git pull
+   - git pull <远程名> <远程分支名>:<本地分支名> //拉取远程仓库到指定本地分支
+3. 推送本地数据
+   - git push -u origin main    //首次推送
+   - git push                   //已关联后直接推送
+   - git push <远程名> <本地分支名>:<远程分支名>    //推送指定本地分支到远程仓库
+---
+> 差异查看
+- git diff                //工作区vs暂存区
+- git diff --cached       //暂存区vs本地仓库
+- git diff --HEAD         //工作区+暂存区vs本地仓库
+- git diff HEAD~1 HEAD    //提交之间的差异(~2,~3)
+- git diff <分支名> <另外一个分支名>    //分支之间的差异
