@@ -52,6 +52,7 @@
    - git branch -m <旧分支名> <新分支名>  //用来重命名本地分支
    - git branch -d <分支名>     //用于删除已合并的分支
    - git branch -D <分支名>     //用于删除未合并的分支
+   - git push origin --delete <分支名> //用于删除远程仓库的分支
 4. 合并
    - git merge <分支名>  //在这之前先切换到主分支
 5. 解决合并冲突
@@ -76,6 +77,11 @@
 > 差异查看
 - git diff                //工作区vs暂存区
 - git diff --cached       //暂存区vs本地仓库
-- git diff --HEAD         //工作区+暂存区vs本地仓库
+- git diff HEAD         //工作区+暂存区vs本地仓库
 - git diff HEAD~1 HEAD    //提交之间的差异(~2,~3)
 - git diff <分支名> <另外一个分支名>    //分支之间的差异
+---
+> 其他指令
+- git stash              //当有其他任务进来时，可将当前任务暂时存储起来
+- git stash list         //可以查看存储起来的任务放在哪里了
+- git stash pop          //恢复任务并删除stash的内容
