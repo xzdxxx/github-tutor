@@ -52,6 +52,7 @@
    - git branch -m <旧分支名> <新分支名>  //用来重命名本地分支
    - git branch -d <分支名>     //用于删除已合并的分支
    - git branch -D <分支名>     //用于删除未合并的分支
+   - git push origin --delete <分支名> //用于删除远程仓库的分支
 4. 合并
    - git merge <分支名>  //在这之前先切换到主分支
 5. 解决合并冲突
