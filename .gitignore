@@ -1,6 +1,11 @@
 *.log
-*.log.*
-log_*
-*_log
-log/
-**/log/
+dist/*.log
+?.log
+file[0-9].log
+file[abc].log
+dist/**/*.log
+!xzd.log
+dist
+/dist
+src/dist
+dist/
