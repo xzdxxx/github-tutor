@@ -67,9 +67,10 @@
    - git remote -v           //查看远程仓库详细信息
    - git remote remove       //解除关联
 2. 拉取远程数据
+   - git fetch               //用来拉去新的分支并创建到本地，多人协作时优先使用
    - git pull
    - git pull <远程名> <远程分支名>:<本地分支名> //拉取远程仓库到指定本地分支
-3. 推送本地数据
+4. 推送本地数据
    - git push -u origin main    //首次推送
    - git push                   //已关联后直接推送
    - git push <远程名> <本地分支名>:<远程分支名>    //推送指定本地分支到远程仓库
